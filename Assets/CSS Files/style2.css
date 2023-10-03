@@ -1,0 +1,76 @@
+#sideBar:hover {
+  background-color: #985e13 !important;
+  color: white;
+}
+
+#heading {
+  font-size: 78px;
+  font-weight: bold;
+}
+
+#subheading {
+  font-size: 24px;
+  text-align: center;
+}
+
+.learn-more:hover {
+  color: white !important;
+  background-color: #985e13 !important;
+}
+
+.nav-link:hover {
+  background-color: rgb(210, 176, 91);
+}
+
+.navLink:hover {
+  background-color: rgb(210, 176, 91);
+  border-bottom: 1px solid rgb(210, 176, 91) !important;
+}
+
+.footerText {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footerText:hover {
+  background-color: #e1d9d1;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  font-size: 18px;
+}
+
+.social-icon {
+  transition: all 0.15s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-10%);
+  transform: translateX(-10%);
+  box-shadow: 5px 5px grey;
+}
+
+@media screen and (min-width: 768px) {
+  #subheading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 575.98px) and (max-width: 767.98px) {
+  #subheading {
+    font-size: 22px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}

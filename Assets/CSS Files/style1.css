@@ -1,0 +1,180 @@
+#sideBar:hover {
+  background-color: #985e13 !important;
+  color: white;
+}
+
+#heading {
+  font-size: 78px;
+  font-weight: bold;
+}
+
+#subheading {
+  font-size: 14px;
+  text-align: center;
+}
+
+.learn-more:hover {
+  color: white !important;
+  background-color: #985e13 !important;
+}
+
+.nav-link:hover {
+  background-color: rgb(210, 176, 91);
+}
+
+.navLink:hover {
+  background-color: rgb(210, 176, 91);
+  border-bottom: 1px solid rgb(210, 176, 91) !important;
+}
+
+.firstp::before {
+  content: "Welcome to HYPO.";
+  font-size: 30px;
+}
+
+.storyp::first-letter {
+  font-size: 22px;
+}
+
+.footerText {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footerText:hover {
+  background-color: #e1d9d1;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  font-size: 18px;
+}
+
+.social-icon {
+  transition: all 0.15s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-10%);
+  transform: translateX(-10%);
+  box-shadow: 5px 5px grey;
+}
+
+@media screen and (min-width: 768px) {
+  #subheading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 575.98px) and (max-width: 767.98px) {
+  #subheading {
+    font-size: 22px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/*  */
+
+.card {
+  border: none;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 450px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 768px) {
+    min-height: 350px;
+  }
+
+  @media (max-width: 420px) {
+    min-height: 300px;
+  }
+
+  &.card-has-bg {
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      -webkit-filter: grayscale(1);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    &:hover {
+      transform: scale(0.98);
+      box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+      background-size: 130%;
+      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+      .card-img-overlay {
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        background: rgb(255, 186, 33);
+        background: linear-gradient(
+          0deg,
+          rgba(255, 186, 33, 0.5) 0%,
+          rgba(255, 186, 33, 1) 100%
+        );
+      }
+    }
+  }
+  .card-footer {
+    background: none;
+    border-top: none;
+    .media {
+      img {
+        border: solid 3px rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+  .card-title {
+    font-weight: 800;
+  }
+  .card-meta {
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .card-body {
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  &:hover {
+    .card-body {
+      margin-top: 30px;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    cursor: pointer;
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .card-img-overlay {
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    background: rgb(255, 186, 33);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 186, 33, 0.3785889355742297) 0%,
+      rgba(255, 186, 33, 1) 100%
+    );
+  }
+}

@@ -1,0 +1,54 @@
+#sideBar:hover {
+  background-color: #985e13 !important;
+  color: white;
+}
+.nav-link:hover {
+  background-color: rgb(210, 176, 91);
+}
+
+.navLink:hover {
+  background-color: rgb(210, 176, 91);
+  border-bottom: 1px solid rgb(210, 176, 91) !important;
+}
+
+.footerText {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footerText:hover {
+  background-color: #e1d9d1;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  font-size: 18px;
+}
+
+.social-icon {
+  transition: all 0.15s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-10%);
+  transform: translateX(-10%);
+  box-shadow: 5px 5px grey;
+}
+
+@media screen and (min-width: 992px) {
+  #Home {
+    height: 100vh;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}

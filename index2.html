@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HYPO.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Assets/CSS Files/style2.css" />
+  </head>
+  <body
+    style="font-family: 'Montserrat', sans-serif; background-color: #c8ae7d"
+  >
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+      <div class="container-fluid px-5">
+        <a
+          id="navBrand"
+          class="navbar-brand p-0 mt-2"
+          style="border: 2px solid black; transition: opacity 0.15s"
+          href="#Home"
+          ><img
+            src="assets/images/hypo._360.png"
+            alt="HYPO. logo"
+            style="height: 75px; width: 145px"
+        /></a>
+        <ul id="navbarNav" class="navbar-nav d-none d-lg-flex">
+          <li class="nav-item">
+            <a
+              class="navLink nav-link text-white mx-2"
+              style="border-bottom: 1px solid white"
+              href="#What"
+              >What</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="navLink nav-link text-white mx-2"
+              style="border-bottom: 1px solid white"
+              href="#Why"
+              >Why</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="navLink nav-link text-white mx-2"
+              style="border-bottom: 1px solid white"
+              href="#How"
+              >How</a
+            >
+          </li>
+        </ul>
+        <button
+          id="sideBar"
+          class="btn"
+          style="background-color: #eac696"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <i class="bi bi-list fs-3"></i>
+        </button>
+      </div>
+    </nav>
+
+    <script>
+      navBrand.style.opacity = "0";
+      navbarNav.style.opacity = "1";
+    </script>
+
+    <div
+      class="offcanvas offcanvas-end"
+      style="background-color: #eac696"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasExampleLabel">Navigation</h3>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <h5 style="font-weight: bold">Check out more here!</h5>
+        <ul class="navbar-nav">
+          <li><hr class="bg-black" style="border: 3px solid black" /></li>
+          <li><a class="nav-link" href="index1.html">Homepage</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index2.html">Who We Are</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index3.html">Men's Shop</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index4.html">Women's Shop</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index5.html">Kid's Shop</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index6.html">More Info</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header
+      id="Home"
+      style="
+        background-image: url(Assets/Images/res4570dd949f339ea34baee4cede08c850fr.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+      "
+    >
+      <div
+        class="overlay"
+        style="background-color: rgba(0, 0, 0, 0.5); height: 100%"
+      ></div>
+
+      <div
+        class="text-white"
+        style="
+          position: absolute;
+          height: 80%;
+          width: 100%;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <h2 id="heading" data-aos="fade-right" data-aos-delay="300">HYPO.</h2>
+        <h4 id="subheading" data-aos="fade-right" data-aos-delay="300">
+          Environmentally Friendly and Hypoallergenic.
+        </h4>
+
+        <a
+          class="learn-more py-2 px-3 mt-3 rounded"
+          style="
+            background-color: #eac696;
+            transition: 0.15s ease;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+          "
+          href="#What"
+          data-aos="flip-up"
+          >Find Out Below</a
+        >
+      </div>
+    </header>
+
+    <section
+      id="What"
+      style="display: flex; align-items: center; overflow: hidden"
+    >
+      <div class="container my-4">
+        <div class="row justify-content-center align-items-center">
+          <h3 style="font-size: 30px; font-weight: bold; text-align: center">
+            What is HYPO?
+          </h3>
+          <hr />
+          <div
+            class="col-lg-6 rounded py-2 mb-2"
+            style="background-color: #eac696"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <p style="font-size: 22px">
+              HYPO is the perfect solution to making life with allergies and
+              other skin sensitivities more comfortable for men, women, and
+              children. These products include latex/spandex-free and
+              chemical-free 100% clothing. HYPO eliminates the use of bleaching
+              compounds, color dyes, and textile resins that can pose a threat
+              to sensitive skin. The cotton used is 100% organically-grown and
+              the fabric is highly absorbent and breathable.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 text-lg-end text-center rounded"
+            data-aos="flip-up"
+            data-aos-delay="600"
+          >
+            <img
+              src="assets/images/clothes 1.jpg"
+              alt="clothes 1"
+              class="rounded img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="Why"
+      style="
+        background-image: url(Assets/Images/clothes\ 2.jpg);
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <div
+        class="overlay"
+        style="background-color: rgba(0, 0, 0, 0.5); height: 100%"
+      ></div>
+      <div
+        class="container-fluid"
+        style="position: absolute; top: 0; height: 100%"
+      >
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-lg-8">
+            <h3
+              class="text-light"
+              style="font-size: 30px; font-weight: bold; text-align: center"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Why choose HYPO?
+            </h3>
+            <hr style="color: black; border: 2px solid black" />
+            <p
+              class="text-light text-center"
+              style="
+                font-size: calc(
+                  12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+                );
+              "
+              data-aos="fade-left"
+              data-aos-delay="600"
+            >
+              HYPO means quality and responsibility. From sowing to sewing, we
+              take pride and pleasure in cotton that's certifiably made from
+              eco-friendly and chemical-free materials. We do not compromise our
+              principles. By choosing HYPO, you are making a statement that
+              living life with allergies can be better while helping to protect
+              our environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="How" style="overflow: hidden">
+      <div class="container my-5">
+        <div class="row">
+          <h1 style="font-size: 30px; font-weight: bold; text-align: center">
+            How Eco-Friendly is HYPO?
+          </h1>
+          <hr />
+          <p
+            class="text-center"
+            style="
+              font-size: calc(
+                12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+              );
+            "
+          >
+            Our materials and processes remain environmentally friendly and safe
+            for people with skin allergies and sensitive skin.<br />Here's how:
+          </p>
+          <div class="col-lg-3 col-md-6 my-2" data-aos="fade-left">
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="assets/images/fabric.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">100% Organic Cotton Fabric</h4>
+                <p>
+                  We buy our yarn from GOTS-certified organic cotton farms. In
+                  these areas, the water supply is not contaminated by
+                  pesticides or any other harmful chemicals or toxins.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="assets/images/thread.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">100% Cotton Thread</h4>
+                <p>
+                  Clothing manufacturers regularly use microplastic materials
+                  like polyester sewing thread to keep the garments affordable
+                  and easy to produce. However, these can be detrimental to
+                  people with skin conditions and sensitive skin.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Images/sewing-needle-541737_640.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Hypoallergenic Coco Buttons</h4>
+                <p>
+                  Completely natural in origin, these coco buttons are applied
+                  to our casual clothes to provide a total allergy-free
+                  experience. They're smooth, durable, and eco-friendly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="450"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="assets/images/mildlee-cardboard-packaging-boxes.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">100% Compostable Packaging</h4>
+                <p>
+                  This new compostable packaging features a Kraft paper top
+                  layer and an inner lining crafted from cornstarch-derived PLA
+                  material to significantly lessen the environmental impact
+                  after use.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div class="container pt-5 mb-3">
+        <div class="row">
+          <div class="col-lg-2 col-md-4">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              About HYPO.
+            </h5>
+            <h6 class="footerText">Information</h6>
+            <h6 class="footerText">Stores</h6>
+            <h6 class="footerText">Careers</h6>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              Help
+            </h5>
+            <h6 class="footerText">FAQ</h6>
+            <h6 class="footerText">Return Policy</h6>
+            <h6 class="footerText">Privacy Policy</h6>
+            <h6 class="footerText">Accessibility</h6>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              Account
+            </h5>
+            <h6 class="footerText">Membership</h6>
+            <h6 class="footerText">Profile</h6>
+            <h6 class="footerText">Coupons</h6>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              E-Newsletter
+            </h5>
+            <h6>
+              Sign up and be the first-in-the know about new arrivals,
+              promotions, in-store events and more.
+            </h6>
+            <a
+              href="#"
+              class="footer-link text-dark fw-bold"
+              style="transition: 0.15s ease"
+              >SUBSCRIBE NOW</a
+            >
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              Socials
+            </h5>
+            <div class="d-flex flex-wrap">
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row py-2">
+          <div class="col-md-4">
+            <small>COPYRIGHT &#169; HYPO. CO.,LTD. ALL RIGHTS RESERVED.</small>
+          </div>
+          <div class="col-md-4 text-center">
+            <small>For Educational Purposes Only.</small>
+          </div>
+          <div class="col-md-4 text-center">
+            <a class="footerText text-dark fw-bold px-2" href="#"
+              >Terms Of Use</a
+            >
+            <a class="footerText text-dark fw-bold px-2" href="#"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script2.js"></script>
+</html>

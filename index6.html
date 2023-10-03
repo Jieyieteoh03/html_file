@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HYPO.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Assets/CSS Files/style6.css" />
+  </head>
+  <body
+    style="font-family: 'Montserrat', sans-serif; background-color: #c8ae7d"
+  >
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+      <div class="container-fluid px-5">
+        <a
+          id="navBrand"
+          class="navbar-brand p-0 mt-2"
+          style="border: 2px solid black; transition: opacity 0.15s"
+          href="#Home"
+          ><img
+            src="assets/images/hypo._360.png"
+            alt="HYPO. logo"
+            style="height: 75px; width: 145px"
+        /></a>
+        <button
+          id="sideBar"
+          class="btn"
+          style="background-color: #eac696"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <i class="bi bi-list fs-3"></i>
+        </button>
+      </div>
+    </nav>
+
+    <script>
+      navBrand.style.opacity = "0";
+    </script>
+
+    <div
+      class="offcanvas offcanvas-end"
+      style="background-color: #eac696"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasExampleLabel">Navigation</h3>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <h5 style="font-weight: bold">Check out more here!</h5>
+        <ul class="navbar-nav">
+          <li><hr class="bg-black" style="border: 3px solid black" /></li>
+          <li><a class="nav-link" href="index1.html">Homepage</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index2.html">Who We Are</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index3.html">Men's Shop</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index4.html">Women's Shop</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index5.html">Kid's Shop</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index6.html">More Info</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header
+      id="Home"
+      style="
+        background-image: url(Assets/Images/Support.jpg);
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+      "
+    >
+      <div
+        class="overlay"
+        style="background-color: rgba(0, 0, 0, 0.5); height: 100%"
+      ></div>
+
+      <div
+        class="text-white"
+        style="
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <h2 id="heading" data-aos="fade-right">More Info</h2>
+        <h4 id="subheading" data-aos="fade-right" data-aos-delay="300">
+          <small class="text-black fs-1">|</small>
+          <a class="sub text-light" style="text-decoration: none" href="#Store"
+            >Store Locations</a
+          >
+          <small class="text-black fs-1">|</small>
+          <a
+            class="sub text-light"
+            style="text-decoration: none"
+            href="#Contact"
+            >Contact Details</a
+          >
+          <small class="text-black fs-1">|</small>
+          <a class="sub text-light" style="text-decoration: none" href="#FAQ"
+            >FAQ</a
+          >
+          <small class="text-black fs-1">|</small>
+        </h4>
+      </div>
+    </header>
+
+    <section id="Store">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2
+            class="pt-3"
+            style="font-size: 30px; font-weight: bold; text-align: center"
+          >
+            Store Locations
+          </h2>
+          <hr />
+          <div
+            class="store-card col-lg-5 py-2"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            <img
+              src="Assets/Images/Store1.jpg"
+              alt=""
+              class="store-location"
+              style="object-fit: cover"
+            />
+            <ul
+              class="bg-white"
+              style="
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                height: 30%;
+                padding-top: 5px;
+                font-size: 14px;
+              "
+            >
+              HYPO. Gurney Paragon Mall
+              <li>
+                Lot 3, Level 5, New Wing, Gurney Paragon Mall, Georgetown, Pulau
+                Pinang
+              </li>
+              <li>Mon - Fri 10:00am - 10:00pm</li>
+              <li>Sat - Sun 9:00am - 11:00pm</li>
+            </ul>
+          </div>
+          <div
+            class="store-card col-lg-5 py-2"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            <img
+              src="Assets/Images/Store2.jpg"
+              alt=""
+              class="store-location"
+              style="object-fit: cover"
+            />
+            <ul
+              class="bg-white"
+              style="
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                height: 30%;
+                padding-top: 5px;
+                font-size: 14px;
+              "
+            >
+              HYPO. Lotus's Tanjong Tokong
+              <li>
+                Lot 6, Level 1, North Wing, Lotus's Tanjong Tokong, Tanjong
+                Tokong, Pulau Pinang
+              </li>
+              <li>Mon - Fri 10:00am - 10:00pm</li>
+              <li>Sat - Sun 9:00am - 11:00pm</li>
+            </ul>
+          </div>
+          <div
+            class="store-card col-lg-5 py-2"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            <img
+              src="Assets/Images/Store3.jpg"
+              alt=""
+              class="store-location"
+              style="object-fit: cover"
+            />
+            <ul
+              class="bg-white"
+              style="
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                height: 30%;
+                padding-top: 5px;
+                font-size: 14px;
+              "
+            >
+              HYPO. Queensbay Mall
+              <li>
+                Lot 8, Level 4, Right Wing, Queensbay Mall, Bayan Lepas, Pulau
+                Pinang
+              </li>
+              <li>Mon - Fri 10:00am - 10:00pm</li>
+              <li>Sat - Sun 9:00am - 11:00pm</li>
+            </ul>
+          </div>
+          <div
+            class="store-card col-lg-5 py-2"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            <img
+              src="Assets/Images/Store4.jpg"
+              alt=""
+              class="store-location"
+              style="object-fit: cover"
+            />
+            <ul
+              class="bg-white"
+              style="
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                height: 30%;
+                padding-top: 5px;
+                font-size: 14px;
+              "
+            >
+              HYPO. Design Village
+              <li>
+                Lot 14, Level 3, Old Wing, Design Village, Batu Kawan, Pulau
+                Pinang
+              </li>
+              <li>Mon - Fri 10:00am - 10:00pm</li>
+              <li>Sat - Sun 9:00am - 11:00pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="Contact"
+      style="
+        background-image: url(Assets/Images/ContactUs.jpg);
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        margin-top: 20px;
+      "
+    >
+      <div
+        class="overlay"
+        style="background-color: rgba(0, 0, 0, 0.5); height: 100%"
+      ></div>
+      <div
+        class="container-fluid d-none d-lg-flex"
+        style="position: absolute; top: 0; height: 100%"
+      >
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-4">
+            <h3
+              class="text-light"
+              style="font-size: 30px; font-weight: bold"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Customer Service
+            </h3>
+            <hr style="color: black; border: 2px solid black" />
+            <p
+              class="text-light"
+              style="
+                font-size: calc(
+                  12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+                );
+              "
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              For General Inquiries: <br />customerservice1@hypo.com.my
+            </p>
+            <p
+              class="text-light"
+              style="
+                font-size: calc(
+                  12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+                );
+              "
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              Business Hours: <br />Monday - Friday
+              <small class="text-black fs-1">|</small> 8:30am to 5:30pm
+              <br />Closed on Saturdays, Sundays & Malaysia Public Holidays
+              <br />Services offered in English, Chinese, & Malay
+            </p>
+          </div>
+          <div class="col-4">
+            <h3
+              class="text-light"
+              style="font-size: 30px; font-weight: bold"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Customer Service
+            </h3>
+            <hr style="color: black; border: 2px solid black" />
+            <p
+              class="text-light"
+              style="
+                font-size: calc(
+                  12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+                );
+              "
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              For Specific Inquiries: <br />customerservice2@hypo.com.my
+            </p>
+            <p
+              class="text-light"
+              style="
+                font-size: calc(
+                  12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+                );
+              "
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              Business Hours: <br />Monday - Friday
+              <small class="text-black fs-1">|</small> 8:30am to 5:30pm
+              <br />Closed on Saturdays, Sundays & Malaysia Public Holidays
+              <br />Services offered in English, Chinese, & Malay
+            </p>
+          </div>
+          <div class="col-4">
+            <h3
+              class="text-light"
+              style="font-size: 30px; font-weight: bold"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Human Resource
+            </h3>
+            <hr style="color: black; border: 2px solid black" />
+            <p
+              class="text-light"
+              style="
+                font-size: calc(
+                  12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+                );
+              "
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              Hotline: <br />(+60)37794569
+            </p>
+            <p
+              class="text-light"
+              style="
+                font-size: calc(
+                  12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+                );
+              "
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              Business Hours: <br />Monday - Friday
+              <small class="text-black fs-1">|</small> 9:00am to 6:00pm
+              <br />Closed on Saturdays, Sundays & Malaysia Public Holidays
+              <br />Services offered in English, Chinese, & Malay
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid d-flex d-lg-none"
+        style="position: absolute; top: 0; height: 100%"
+      >
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-12">
+            <h3
+              class="text-light"
+              style="font-size: 30px; font-weight: bold"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Customer Service
+            </h3>
+            <hr style="color: black; border: 2px solid black" />
+            <p
+              class="text-light mb-0"
+              style="
+                font-size: calc(
+                  12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+                );
+              "
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              For General Inquiries : customerservice1@hypo.com.my
+            </p>
+            <p
+              class="text-light"
+              style="
+                font-size: calc(
+                  12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+                );
+              "
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              Business Hours : Monday - Friday
+              <small class="text-black fs-1">|</small> 8:30am to 5:30pm
+              <br />Closed on Saturdays, Sundays & Malaysia Public Holidays.
+              Services offered in English, Chinese, & Malay
+            </p>
+          </div>
+          <div class="col-12">
+            <h3
+              class="text-light"
+              style="font-size: 30px; font-weight: bold"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Customer Service
+            </h3>
+            <hr style="color: black; border: 2px solid black" />
+            <p
+              class="text-light mb-0"
+              style="
+                font-size: calc(
+                  12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+                );
+              "
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              For Specific Inquiries : customerservice2@hypo.com.my
+            </p>
+            <p
+              class="text-light"
+              style="
+                font-size: calc(
+                  12px + (22 - 12) * ((100vw - 320px) / (1600 - 320))
+                );
+              "
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              Business Hours : Monday - Friday
+              <small class="text-black fs-1">|</small> 8:30am to 5:30pm
+              <br />Closed on Saturdays, Sundays & Malaysia Public Holidays.
+              Services offered in English, Chinese, & Malay
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="FAQ"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <div class="container my-4">
+        <div class="row justify-content-center align-items-center">
+          <h2
+            class="pt-3"
+            style="font-size: 30px; font-weight: bold; text-align: center"
+          >
+            FAQ
+          </h2>
+          <hr />
+          <div
+            class="accordion"
+            id="accordionExample"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <h6>Can i get the items I want online?</h6>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Yes, you can! Just head to our online shop to order whatever
+                  catches your eye!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <h6>Can i reserve items I want for later?</h6>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  We can reserve the regular items for 7 days and sale items for
+                  3 day in any of our outlets. If items are not picked up within
+                  the reservation period, items will automatically be released.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <h6>HYPO Exchange Policy.</h6>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Items sold are non-refundable. However, should you wish to
+                  return any purchase from us, it will be considered on a case
+                  to case basis. Kindly ensure the exchanged products are
+                  purchased within 7 days with original receipt. Items should be
+                  in original, saleable condition. Please note that Sale items,
+                  electronic, skin-care and innerwear are non-exchangeable. All
+                  exchanges must be made at the store of purchase.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  <h6>Shipping Overseas</h6>
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  We currently do not offer delivery services to areas outside
+                  of Malaysia.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  <h6>Standard Corporate Discount</h6>
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  For purchases RM 7000 and above there will be standard
+                  corporate discount of 10%.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  <h6>Can we place a special order with HYPO</h6>
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Yes, however the lead time will be 6 to 8 weeks upon
+                  confirmation of stock availability in Japan and applicable
+                  only to items that meet Malaysia import regulation.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div class="container pt-5 mb-3">
+        <div class="row">
+          <div class="col-lg-2 col-md-4">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              About HYPO.
+            </h5>
+            <h6 class="footerText">Information</h6>
+            <h6 class="footerText">Stores</h6>
+            <h6 class="footerText">Careers</h6>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              Help
+            </h5>
+            <h6 class="footerText">FAQ</h6>
+            <h6 class="footerText">Return Policy</h6>
+            <h6 class="footerText">Privacy Policy</h6>
+            <h6 class="footerText">Accessibility</h6>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              Account
+            </h5>
+            <h6 class="footerText">Membership</h6>
+            <h6 class="footerText">Profile</h6>
+            <h6 class="footerText">Coupons</h6>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              E-Newsletter
+            </h5>
+            <h6>
+              Sign up and be the first-in-the know about new arrivals,
+              promotions, in-store events and more.
+            </h6>
+            <a
+              href="#"
+              class="footer-link text-dark fw-bold"
+              style="transition: 0.15s ease"
+              >SUBSCRIBE NOW</a
+            >
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              Socials
+            </h5>
+            <div class="d-flex flex-wrap">
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row py-2">
+          <div class="col-md-4">
+            <small>COPYRIGHT &#169; HYPO. CO.,LTD. ALL RIGHTS RESERVED.</small>
+          </div>
+          <div class="col-md-4 text-center">
+            <small>For Educational Purposes Only.</small>
+          </div>
+          <div class="col-md-4 text-center">
+            <a class="footerText text-dark fw-bold px-2" href="#"
+              >Terms Of Use</a
+            >
+            <a class="footerText text-dark fw-bold px-2" href="#"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script6.js"></script>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HYPO.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Assets/CSS Files/style3.css" />
+  </head>
+
+  <body
+    style="font-family: 'Montserrat', sans-serif; background-color: #c8ae7d"
+  >
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+      <div class="container-fluid px-5">
+        <a
+          id="navBrand"
+          class="navbar-brand p-0 mt-2"
+          style="border: 2px solid black; transition: opacity 0.15s"
+          href="#Home"
+          ><img
+            src="Assets/Men Images/HYPO..png"
+            alt="HYPO. logo"
+            style="height: 75px; width: 145px"
+        /></a>
+        <ul id="navbarNav" class="navbar-nav d-none d-lg-flex">
+          <li class="nav-item">
+            <a
+              class="navLink nav-link text-white mx-2"
+              style="border-bottom: 1px solid white"
+              href="#Featured"
+              >Featured</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="navLink nav-link text-white mx-2"
+              style="border-bottom: 1px solid white"
+              href="#T-Shirts"
+              >T-Shirts</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="navLink nav-link text-white mx-2"
+              style="border-bottom: 1px solid white"
+              href="#Trousers"
+              >Trousers</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="navLink nav-link text-white mx-2"
+              style="border-bottom: 1px solid white"
+              href="#Shorts"
+              >Shorts</a
+            >
+          </li>
+        </ul>
+        <button
+          id="sideBar"
+          class="btn"
+          style="background-color: #eac696"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <i class="bi bi-list fs-3"></i>
+        </button>
+      </div>
+    </nav>
+
+    <script>
+      navBrand.style.opacity = "0";
+      navbarNav.style.opacity = "1";
+    </script>
+
+    <div
+      class="offcanvas offcanvas-end"
+      style="background-color: #eac696"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasExampleLabel">Navigation</h3>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <h5 style="font-weight: bold">Check out more here!</h5>
+        <ul class="navbar-nav">
+          <li><hr class="bg-black" style="border: 3px solid black" /></li>
+          <li><a class="nav-link" href="index1.html">Homepage</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index2.html">Who We Are</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index3.html">Men's Shop</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index4.html">Women's shop</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index5.html">Kid's Shop</a></li>
+          <li><hr class="bg-light" /></li>
+          <li><a class="nav-link" href="index6.html">More Info</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header id="Home">
+      <div
+        id="carouselExampleRide"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        style="height: 100%"
+      >
+        <div class="carousel-inner" style="height: 100%">
+          <div class="carousel-item active" style="height: 100%">
+            <img
+              src="Assets/Men Images/sehajpal-singh-biBrhX84bQw-unsplash.jpg"
+              class="d-block w-100"
+              alt=""
+              style="filter: brightness(50%)"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Assets/Men Images/saad-jameel-2Hpp2bevgFc-unsplash.jpg"
+              class="d-block w-100"
+              alt=""
+              style="filter: brightness(50%)"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Assets/Men Images/ty-williams-geTLiolE_eo-unsplash.jpg"
+              class="d-block w-100"
+              alt=""
+              style="filter: brightness(50%)"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev d-none d-md-block"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next d-none d-md-block"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <section id="Featured" style="overflow: hidden">
+      <div class="container my-4">
+        <div class="row">
+          <h3 style="font-size: 30px; font-weight: bold; text-align: center">
+            Featured
+          </h3>
+          <hr />
+          <div class="col-lg-3 col-md-6 my-2" data-aos="fade-left">
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/download.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text text-center">T-Shirts</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/Tops - Mens Sale - Men - COS.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text text-center">Collar Shirts</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/ELASTICATED ORGANIC-COTTON TROUSERS (1).jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text text-center">Trousers</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="450"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/Basics Shorts Man _ ZARA United States.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text text-center">Shorts</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="T-Shirts" style="overflow: hidden">
+      <div class="container my-4">
+        <div class="row">
+          <h3 style="font-size: 30px; font-weight: bold; text-align: center">
+            T-Shirts Collection
+          </h3>
+          <hr />
+          <div class="col-lg-3 col-md-6 my-2" data-aos="fade-left">
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/BRUSHED COTTON T-SHIRT.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Brushed Cotton - Brown</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/Tops - Mens Sale - Men - COS.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Brushed Cotton - Greyish Blue</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/OVERSIZED T-SHIRT.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Brushed Cotton - Maroon</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="450"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/THE CLEAN CUT T-SHIRT.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Brushed Cotton - White</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Collar Shirts" style="overflow: hidden">
+      <div class="container my-4">
+        <div class="row">
+          <h3 style="font-size: 30px; font-weight: bold; text-align: center">
+            Collar Shirts Collection
+          </h3>
+          <hr />
+          <div class="col-lg-3 col-md-6 my-2" data-aos="fade-left">
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/COS - Contemporary Style, Designed To Last - Shop Online - (1).jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Button-Up Top - Greyish White</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/COS - Contemporary Style, Designed To Last - Shop Online - WW (2).jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Button-Up Top - <br />Khaki Grey</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/COS - Contemporary Style, Designed To Last - Shop Online - WW.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Button-Up Top - Apricot</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="450"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/Tops - Mens Sale - Men - COS.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Button-Up Top - Army Green</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Trousers" style="overflow: hidden">
+      <div class="container my-4">
+        <div class="row">
+          <h3 style="font-size: 30px; font-weight: bold; text-align: center">
+            Trousers Collection
+          </h3>
+          <hr />
+          <div class="col-lg-3 col-md-6 my-2" data-aos="fade-left">
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/trouser2.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Pants - Khaki</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/trousers3.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Pants - Black</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/Shop.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Pants - Dark Brown</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="450"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/trousers.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Pants - Khaki Yellow</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Shorts" style="overflow: hidden">
+      <div class="container my-4">
+        <div class="row">
+          <h3 style="font-size: 30px; font-weight: bold; text-align: center">
+            Shorts Collection
+          </h3>
+          <hr />
+          <div class="col-lg-3 col-md-6 my-2" data-aos="fade-left">
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/New Arrivals - Men - COS.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Shorts - Beige</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/LEATHER BERMUDA SHORTS.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Shorts - Chocolate</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/shorts1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Shorts - Black</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 my-2"
+            data-aos="fade-left"
+            data-aos-delay="450"
+          >
+            <div class="card" style="width: 100%; height: 100%">
+              <img
+                src="Assets/Men Images/shorts3.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-text">Shorts - White</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div class="container pt-5 mb-3">
+        <div class="row">
+          <div class="col-lg-2 col-md-4">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              About HYPO.
+            </h5>
+            <h6 class="footerText">Information</h6>
+            <h6 class="footerText">Stores</h6>
+            <h6 class="footerText">Careers</h6>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              Help
+            </h5>
+            <h6 class="footerText">FAQ</h6>
+            <h6 class="footerText">Return Policy</h6>
+            <h6 class="footerText">Privacy Policy</h6>
+            <h6 class="footerText">Accessibility</h6>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              Account
+            </h5>
+            <h6 class="footerText">Membership</h6>
+            <h6 class="footerText">Profile</h6>
+            <h6 class="footerText">Coupons</h6>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              E-Newsletter
+            </h5>
+            <h6>
+              Sign up and be the first-in-the know about new arrivals,
+              promotions, in-store events and more.
+            </h6>
+            <a
+              href="#"
+              class="footer-link text-dark fw-bold"
+              style="transition: 0.15s ease"
+              >SUBSCRIBE NOW</a
+            >
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5
+              class="mb-3"
+              style="text-decoration: underline; font-weight: bold"
+            >
+              Socials
+            </h5>
+            <div class="d-flex flex-wrap">
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a
+                class="social-icon bg-dark text-light rounded px-3 py-1 m-2"
+                style="text-decoration: none"
+                href="#"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row py-2">
+          <div class="col-md-4">
+            <small>COPYRIGHT &#169; HYPO. CO.,LTD. ALL RIGHTS RESERVED.</small>
+          </div>
+          <div class="col-md-4 text-center">
+            <small>For Educational Purposes Only.</small>
+          </div>
+          <div class="col-md-4 text-center">
+            <a class="footerText text-dark fw-bold px-2" href="#"
+              >Terms Of Use</a
+            >
+            <a class="footerText text-dark fw-bold px-2" href="#"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script3.js"></script>
+  </body>
+</html>
